@@ -5,15 +5,53 @@
   
 
   
-  <title>wq-9</title>
+  <title>springboot | wq-9</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="wq-9">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="一、Spring Boot 入门 1、Spring Boot 简介 简化Spring应用开发的一个框架； 整个Spring技术栈的一个大整合； J2EE开发的一站式解决方案；  2、微服务2014，martin fowler 微服务：架构风格（服务微化） 一个应用应该是一组小型服务；可以通过HTTP的方式进行互通； 单体应用：ALL IN ONE 微服务：每一个功能元素最终都是一个可独立替换和独立">
+<meta property="og:type" content="article">
+<meta property="og:title" content="springboot">
+<meta property="og:url" content="http://yoursite.com/2019/07/16/springboot/index.html">
 <meta property="og:site_name" content="wq-9">
+<meta property="og:description" content="一、Spring Boot 入门 1、Spring Boot 简介 简化Spring应用开发的一个框架； 整个Spring技术栈的一个大整合； J2EE开发的一站式解决方案；  2、微服务2014，martin fowler 微服务：架构风格（服务微化） 一个应用应该是一组小型服务；可以通过HTTP的方式进行互通； 单体应用：ALL IN ONE 微服务：每一个功能元素最终都是一个可独立替换和独立">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="file://F:/%E7%99%BE%E6%88%98%E8%B5%84%E6%BA%90/1.%20spring%20boot/%E5%B0%9A%E7%A1%85%E8%B0%B7springboot/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%96%87%E6%A1%A3/Spring%20Boot%20%E7%AC%94%E8%AE%B0/images/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20180129151045.png?lastModify=1563153367">
+<meta property="og:image" content="file://F:/%E7%99%BE%E6%88%98%E8%B5%84%E6%BA%90/1.%20spring%20boot/%E5%B0%9A%E7%A1%85%E8%B0%B7springboot/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%96%87%E6%A1%A3/Spring%20Boot%20%E7%AC%94%E8%AE%B0/images/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20180129151112.png?lastModify=1563153367">
+<meta property="og:image" content="file://F:/%E7%99%BE%E6%88%98%E8%B5%84%E6%BA%90/1.%20spring%20boot/%E5%B0%9A%E7%A1%85%E8%B0%B7springboot/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%96%87%E6%A1%A3/Spring%20Boot%20%E7%AC%94%E8%AE%B0/images/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20180129224104.png?lastModify=1563153367">
+<meta property="og:image" content="file://F:/%E7%99%BE%E6%88%98%E8%B5%84%E6%BA%90/1.%20spring%20boot/%E5%B0%9A%E7%A1%85%E8%B0%B7springboot/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%96%87%E6%A1%A3/Spring%20Boot%20%E7%AC%94%E8%AE%B0/images/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20180130161620.png?lastModify=1563153367">
+<meta property="og:image" content="file://D:/git/blogs/source/_posts/images/3.png?lastModify=1563153367">
+<meta property="og:image" content="file://D:/git/blogs/source/_posts/images/4.jpg?lastModify=1563153367">
+<meta property="og:image" content="file://D:/git/blogs/source/_posts/images/5.png?lastModify=1563153367">
+<meta property="og:image" content="file://F:/%E7%99%BE%E6%88%98%E8%B5%84%E6%BA%90/1.%20spring%20boot/%E5%B0%9A%E7%A1%85%E8%B0%B7springboot/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%96%87%E6%A1%A3/Spring%20Boot%20%E7%AC%94%E8%AE%B0/images/concrete-bindings.png?lastModify=1563153367">
+<meta property="og:image" content="file://F:/%E7%99%BE%E6%88%98%E8%B5%84%E6%BA%90/1.%20spring%20boot/%E5%B0%9A%E7%A1%85%E8%B0%B7springboot/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%96%87%E6%A1%A3/Spring%20Boot%20%E7%AC%94%E8%AE%B0/images/legacy.png?lastModify=1563153367">
+<meta property="og:image" content="file://F:/%E7%99%BE%E6%88%98%E8%B5%84%E6%BA%90/1.%20spring%20boot/%E5%B0%9A%E7%A1%85%E8%B0%B7springboot/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%96%87%E6%A1%A3/Spring%20Boot%20%E7%AC%94%E8%AE%B0/images/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20180131220946.png?lastModify=1563153367">
+<meta property="og:image" content="file://F:/%E7%99%BE%E6%88%98%E8%B5%84%E6%BA%90/1.%20spring%20boot/%E5%B0%9A%E7%A1%85%E8%B0%B7springboot/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%96%87%E6%A1%A3/Spring%20Boot%20%E7%AC%94%E8%AE%B0/images/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20180131221411.png?lastModify=1563153367">
+<meta property="og:image" content="file://F:/%E7%99%BE%E6%88%98%E8%B5%84%E6%BA%90/1.%20spring%20boot/%E5%B0%9A%E7%A1%85%E8%B0%B7springboot/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%96%87%E6%A1%A3/Spring%20Boot%20%E7%AC%94%E8%AE%B0/images/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20180203181751.png?lastModify=1563153367">
+<meta property="og:image" content="file://F:/%E7%99%BE%E6%88%98%E8%B5%84%E6%BA%90/1.%20spring%20boot/%E5%B0%9A%E7%A1%85%E8%B0%B7springboot/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%96%87%E6%A1%A3/Spring%20Boot%20%E7%AC%94%E8%AE%B0/images/template-engine.png?lastModify=1563153367">
+<meta property="og:image" content="file://F:/%E7%99%BE%E6%88%98%E8%B5%84%E6%BA%90/1.%20spring%20boot/%E5%B0%9A%E7%A1%85%E8%B0%B7springboot/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%96%87%E6%A1%A3/Spring%20Boot%20%E7%AC%94%E8%AE%B0/images/2018-02-04_123955.png?lastModify=1563153367">
+<meta property="og:image" content="file://F:/%E7%99%BE%E6%88%98%E8%B5%84%E6%BA%90/1.%20spring%20boot/%E5%B0%9A%E7%A1%85%E8%B0%B7springboot/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%96%87%E6%A1%A3/Spring%20Boot%20%E7%AC%94%E8%AE%B0/images/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20180211130721.png?lastModify=1563153367">
+<meta property="og:image" content="file://F:/%E7%99%BE%E6%88%98%E8%B5%84%E6%BA%90/1.%20spring%20boot/%E5%B0%9A%E7%A1%85%E8%B0%B7springboot/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%96%87%E6%A1%A3/Spring%20Boot%20%E7%AC%94%E8%AE%B0/images/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20180211134506.png?lastModify=1563153367">
+<meta property="og:image" content="file://F:/%E7%99%BE%E6%88%98%E8%B5%84%E6%BA%90/1.%20spring%20boot/%E5%B0%9A%E7%A1%85%E8%B0%B7springboot/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%96%87%E6%A1%A3/Spring%20Boot%20%E7%AC%94%E8%AE%B0/images/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20180226173408.png?lastModify=1563153367">
+<meta property="og:image" content="file://F:/%E7%99%BE%E6%88%98%E8%B5%84%E6%BA%90/1.%20spring%20boot/%E5%B0%9A%E7%A1%85%E8%B0%B7springboot/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%96%87%E6%A1%A3/Spring%20Boot%20%E7%AC%94%E8%AE%B0/images/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20180226180347.png?lastModify=1563153367">
+<meta property="og:image" content="file://F:/%E7%99%BE%E6%88%98%E8%B5%84%E6%BA%90/1.%20spring%20boot/%E5%B0%9A%E7%A1%85%E8%B0%B7springboot/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%96%87%E6%A1%A3/Spring%20Boot%20%E7%AC%94%E8%AE%B0/images/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20180226173527.png?lastModify=1563153367">
+<meta property="og:image" content="file://F:/%E7%99%BE%E6%88%98%E8%B5%84%E6%BA%90/1.%20spring%20boot/%E5%B0%9A%E7%A1%85%E8%B0%B7springboot/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%96%87%E6%A1%A3/Spring%20Boot%20%E7%AC%94%E8%AE%B0/images/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20180226180504.png?lastModify=1563153367">
+<meta property="og:image" content="file://F:/%E7%99%BE%E6%88%98%E8%B5%84%E6%BA%90/1.%20spring%20boot/%E5%B0%9A%E7%A1%85%E8%B0%B7springboot/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%96%87%E6%A1%A3/Spring%20Boot%20%E7%AC%94%E8%AE%B0/images/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20180228135513.png?lastModify=1563153367">
+<meta property="og:image" content="file://F:/%E7%99%BE%E6%88%98%E8%B5%84%E6%BA%90/1.%20spring%20boot/%E5%B0%9A%E7%A1%85%E8%B0%B7springboot/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%96%87%E6%A1%A3/Spring%20Boot%20%E7%AC%94%E8%AE%B0/images/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20180301142915.png?lastModify=1563153367">
+<meta property="og:image" content="file://F:/%E7%99%BE%E6%88%98%E8%B5%84%E6%BA%90/1.%20spring%20boot/%E5%B0%9A%E7%A1%85%E8%B0%B7springboot/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%96%87%E6%A1%A3/Spring%20Boot%20%E7%AC%94%E8%AE%B0/images/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20180302114401.png?lastModify=1563153367">
+<meta property="og:image" content="file://F:/%E7%99%BE%E6%88%98%E8%B5%84%E6%BA%90/1.%20spring%20boot/%E5%B0%9A%E7%A1%85%E8%B0%B7springboot/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%96%87%E6%A1%A3/Spring%20Boot%20%E7%AC%94%E8%AE%B0/images/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20180302144835.png?lastModify=1563153367">
+<meta property="og:image" content="file://F:/%E7%99%BE%E6%88%98%E8%B5%84%E6%BA%90/1.%20spring%20boot/%E5%B0%9A%E7%A1%85%E8%B0%B7springboot/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%96%87%E6%A1%A3/Spring%20Boot%20%E7%AC%94%E8%AE%B0/images/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20180302144910.png?lastModify=1563153367">
+<meta property="og:image" content="file://F:/%E7%99%BE%E6%88%98%E8%B5%84%E6%BA%90/1.%20spring%20boot/%E5%B0%9A%E7%A1%85%E8%B0%B7springboot/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%96%87%E6%A1%A3/Spring%20Boot%20%E7%AC%94%E8%AE%B0/images/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20180302221835.png?lastModify=1563153367">
+<meta property="og:image" content="file://F:/%E7%99%BE%E6%88%98%E8%B5%84%E6%BA%90/1.%20spring%20boot/%E5%B0%9A%E7%A1%85%E8%B0%B7springboot/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%96%87%E6%A1%A3/Spring%20Boot%20%E7%AC%94%E8%AE%B0/images/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20180303145450.png?lastModify=1563153367">
+<meta property="og:image" content="file://F:/%E7%99%BE%E6%88%98%E8%B5%84%E6%BA%90/1.%20spring%20boot/%E5%B0%9A%E7%A1%85%E8%B0%B7springboot/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%96%87%E6%A1%A3/Spring%20Boot%20%E7%AC%94%E8%AE%B0/images/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20180303145531.png?lastModify=1563153367">
+<meta property="og:image" content="file://F:/%E7%99%BE%E6%88%98%E8%B5%84%E6%BA%90/1.%20spring%20boot/%E5%B0%9A%E7%A1%85%E8%B0%B7springboot/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%96%87%E6%A1%A3/Spring%20Boot%20%E7%AC%94%E8%AE%B0/images/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20180303165113.png?lastModify=1563153367">
+<meta property="og:image" content="file://F:/%E7%99%BE%E6%88%98%E8%B5%84%E6%BA%90/1.%20spring%20boot/%E5%B0%9A%E7%A1%85%E8%B0%B7springboot/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%96%87%E6%A1%A3/Spring%20Boot%20%E7%AC%94%E8%AE%B0/images/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20180305194443.png?lastModify=1563153367">
+<meta property="og:image" content="file://F:/%E7%99%BE%E6%88%98%E8%B5%84%E6%BA%90/1.%20spring%20boot/%E5%B0%9A%E7%A1%85%E8%B0%B7springboot/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%96%87%E6%A1%A3/Spring%20Boot%20%E7%AC%94%E8%AE%B0/images/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20180306105412.png?lastModify=1563153367">
+<meta property="og:image" content="file://F:/%E7%99%BE%E6%88%98%E8%B5%84%E6%BA%90/1.%20spring%20boot/%E5%B0%9A%E7%A1%85%E8%B0%B7springboot/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%96%87%E6%A1%A3/Spring%20Boot%20%E7%AC%94%E8%AE%B0/images/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20180306145727.png?lastModify=1563153367">
+<meta property="og:image" content="file://F:/%E7%99%BE%E6%88%98%E8%B5%84%E6%BA%90/1.%20spring%20boot/%E5%B0%9A%E7%A1%85%E8%B0%B7springboot/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%96%87%E6%A1%A3/Spring%20Boot%20%E7%AC%94%E8%AE%B0/images/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20180306145855.png?lastModify=1563153367">
+<meta property="og:updated_time" content="2019-07-16T12:39:17.219Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="wq-9">
+<meta name="twitter:title" content="springboot">
+<meta name="twitter:description" content="一、Spring Boot 入门 1、Spring Boot 简介 简化Spring应用开发的一个框架； 整个Spring技术栈的一个大整合； J2EE开发的一站式解决方案；  2、微服务2014，martin fowler 微服务：架构风格（服务微化） 一个应用应该是一组小型服务；可以通过HTTP的方式进行互通； 单体应用：ALL IN ONE 微服务：每一个功能元素最终都是一个可独立替换和独立">
+<meta name="twitter:image" content="file://F:/%E7%99%BE%E6%88%98%E8%B5%84%E6%BA%90/1.%20spring%20boot/%E5%B0%9A%E7%A1%85%E8%B0%B7springboot/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%BA%90%E7%A0%81%E3%80%81%E8%B5%84%E6%96%99%E3%80%81%E8%AF%BE%E4%BB%B6/%E6%96%87%E6%A1%A3/Spring%20Boot%20%E7%AC%94%E8%AE%B0/images/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20180129151045.png?lastModify=1563153367">
   
     <link rel="alternate" href="/atom.xml" title="wq-9" type="application/atom+xml">
   
@@ -60,9 +98,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-springboot" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-springboot" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/07/16/springboot/" class="article-date">
   <time datetime="2019-07-16T12:34:38.000Z" itemprop="datePublished">2019-07-16</time>
@@ -75,8 +111,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/16/springboot/">springboot</a>
+    <h1 class="article-title" itemprop="name">
+      springboot
     </h1>
   
 
@@ -1463,281 +1499,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-springboot注解" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/07/13/springboot注解/" class="article-date">
-  <time datetime="2019-07-13T05:12:47.000Z" itemprop="datePublished">2019-07-13</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/13/springboot注解/">springboot注解</a>
-    </h1>
+    <a href="/2019/07/13/springboot注解/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">springboot注解</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="1、主程序类，主入口类"><a href="#1、主程序类，主入口类" class="headerlink" title="1、主程序类，主入口类"></a>1、主程序类，主入口类</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> *  <span class="doctag">@SpringBootApplication</span> 来标注一个主程序类，说明这是一个Spring Boot应用</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@SpringBootApplication</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorldMainApplication</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// Spring应用启动起来</span></span><br><span class="line">        SpringApplication.run(HelloWorldMainApplication.class,args);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>@<strong>SpringBootApplication</strong>:    Spring Boot应用标注在某个类上说明这个类是SpringBoot的主配置类，SpringBoot就应该运行这个类的main方法来启动SpringBoot应用；</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Target</span>(ElementType.TYPE)</span><br><span class="line"><span class="meta">@Retention</span>(RetentionPolicy.RUNTIME)</span><br><span class="line"><span class="meta">@Documented</span></span><br><span class="line"><span class="meta">@Inherited</span></span><br><span class="line"><span class="meta">@SpringBootConfiguration</span></span><br><span class="line"><span class="meta">@EnableAutoConfiguration</span></span><br><span class="line"><span class="meta">@ComponentScan</span>(excludeFilters = &#123;</span><br><span class="line">      <span class="meta">@Filter</span>(type = FilterType.CUSTOM, classes = TypeExcludeFilter.class),</span><br><span class="line">      <span class="meta">@Filter</span>(type = FilterType.CUSTOM, classes = AutoConfigurationExcludeFilter.class) &#125;)</span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> SpringBootApplication &#123;</span><br></pre></td></tr></table></figure>
-
-<p>@<strong>SpringBootConfiguration</strong>:Spring Boot的配置类；</p>
-<p>​        标注在某个类上，表示这是一个Spring Boot的配置类；</p>
-<p>​        @<strong>Configuration</strong>:配置类上来标注这个注解；</p>
-<p>​            配置类 —–  配置文件；配置类也是容器中的一个组件；@Component</p>
-<p>@<strong>EnableAutoConfiguration</strong>：开启自动配置功能；</p>
-<p>​        以前我们需要配置的东西，Spring Boot帮我们自动配置；@<strong>EnableAutoConfiguration</strong>告诉SpringBoot开启自动配置功能；这样自动配置才能生效；</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@AutoConfigurationPackage</span></span><br><span class="line"><span class="meta">@Import</span>(EnableAutoConfigurationImportSelector.class)</span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> EnableAutoConfiguration &#123;</span><br></pre></td></tr></table></figure>
-
-<p>​          @<strong>AutoConfigurationPackage</strong>：自动配置包</p>
-<p>​        @<strong>Import</strong>(AutoConfigurationPackages.Registrar.class)：</p>
-<p>​        Spring的底层注解@Import，给容器中导入一个组件；导入的组件由AutoConfigurationPackages.Registrar.class；</p>
-<p>==将主配置类（@SpringBootApplication标注的类）的所在包及下面所有子包里面的所有组件扫描到Spring容器；==</p>
-<p>​    @<strong>Import</strong>(EnableAutoConfigurationImportSelector.class)；</p>
-<p>​        给容器中导入组件？</p>
-<p>​        <strong>EnableAutoConfigurationImportSelector</strong>：导入哪些组件的选择器；</p>
-<p>​        将所有需要导入的组件以全类名的方式返回；这些组件就会被添加到容器中；</p>
-<p>​        会给容器中导入非常多的自动配置类（xxxAutoConfiguration）；就是给容器中导入这个场景需要的所有组件，并配置好这些组件；        </p>
-<h3 id="2-ResponseBody"><a href="#2-ResponseBody" class="headerlink" title="2.@ResponseBody"></a>2.@ResponseBody</h3><p>可以加在controller的方法上，类返回的数据直接打印在浏览器上。</p>
-<h3 id="3-Controller"><a href="#3-Controller" class="headerlink" title="3.@Controller"></a>3.@Controller</h3><p>mvc注解，后端控制器。</p>
-<h3 id="4-RequestMapping-“”"><a href="#4-RequestMapping-“”" class="headerlink" title="4.@RequestMapping(“”)"></a>4.@RequestMapping(“”)</h3><p>路径注解，一般直接输入ip+端口+路径名就可以访问此方法。</p>
-<h3 id="5-RestController"><a href="#5-RestController" class="headerlink" title="5.@RestController"></a>5.@RestController</h3><p>是Controller 和ResponseBody的合体。</p>
-<h3 id="6-ConfigurationProperties-prefix-”配置文件中对象名”"><a href="#6-ConfigurationProperties-prefix-”配置文件中对象名”" class="headerlink" title="6.@ConfigurationProperties(prefix=”配置文件中对象名”)"></a>6.@ConfigurationProperties(prefix=”配置文件中对象名”)</h3><p>告诉springboot将本类(通常pojo)中的所有属性和配置文件中的相关配置进行绑定,配置文件有yml，properties。</p>
-<p>但是如果是自己定义的类需要结合注解@Component，声明将这个组件添加至容器中，这样才可以被使用。</p>
-<p>“只有这个组件是容器中的组件，才能使用容器提供@ConfigurationProperties功能,”</p>
-<h3 id="7-component注解"><a href="#7-component注解" class="headerlink" title="7.@component注解"></a>7.@component注解</h3><p>在mapper文件上加@Component注解，把普通pojo实例化到spring容器中，相当于配置文件中的<bean id class></bean></p>
-<h3 id="8-SpringBootTest"><a href="#8-SpringBootTest" class="headerlink" title="8.@SpringBootTest"></a>8.@SpringBootTest</h3><p>springboot的单元测试。</p>
-<h3 id="9-RunWith-SpringRunner-class"><a href="#9-RunWith-SpringRunner-class" class="headerlink" title="9.@RunWith(SpringRunner.class)"></a>9.@RunWith(SpringRunner.class)</h3><p>单元测试用spring的驱动器来跑。</p>
-<h3 id="10-Autowired"><a href="#10-Autowired" class="headerlink" title="10.@Autowired"></a>10.@Autowired</h3><p>自动注入属性。</p>
-<h3 id="11-Value"><a href="#11-Value" class="headerlink" title="11.@Value()"></a>11.@Value()</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;bean class=&quot;person&quot;&gt;         </span><br><span class="line">&lt;property name=&quot;lisi&quot; value=&quot;字面量/$&#123;key&#125;从环境变量、配置文件中获取值&quot;&gt;&lt;/property&gt;</span><br><span class="line">&lt;/bean&gt;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">@Value(&quot;$&#123;person.last-name&#125;&quot;)</span><br><span class="line">private String lastName;</span><br><span class="line">@Value(&quot;#&#123;12*2&#125;&quot;)</span><br><span class="line">private Integer age;</span><br><span class="line">@Value(&quot;true&quot;)</span><br><span class="line">private Boolean boss;</span><br></pre></td></tr></table></figure>
-
-<h3 id="12-Value获取值和-ConfigurationProperties获取值比较"><a href="#12-Value获取值和-ConfigurationProperties获取值比较" class="headerlink" title="12.@Value获取值和@ConfigurationProperties获取值比较"></a>12.@Value获取值和@ConfigurationProperties获取值比较</h3><table>
-<thead>
-<tr>
-<th></th>
-<th>@ConfigurationProperties</th>
-<th>@Value</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>功能</td>
-<td>批量注入配置文件中的属性</td>
-<td>一个个指定</td>
-</tr>
-<tr>
-<td>松散绑定（松散语法）</td>
-<td>支持</td>
-<td>不支持</td>
-</tr>
-<tr>
-<td>SpEL</td>
-<td>不支持</td>
-<td>支持</td>
-</tr>
-<tr>
-<td>JSR303数据校验</td>
-<td>支持</td>
-<td>不支持</td>
-</tr>
-<tr>
-<td>复杂类型封装</td>
-<td>支持</td>
-<td>不支持</td>
-</tr>
-</tbody></table>
-<p>配置文件yml还是properties他们都能获取到值；</p>
-<p>如果说，我们只是在某个业务逻辑中需要获取一下配置文件中的某项值，使用@Value；map类型获取不到。</p>
-<p>如果说，我们专门编写了一个javaBean来和配置文件进行映射，我们就直接使用@ConfigurationProperties；</p>
-<p>• <strong>属性名匹配规则（Relaxed binding）</strong> </p>
-<p>– person.firstName：使用标准方式 </p>
-<p>– person.first-name：大写用- </p>
-<p>– person.first_name：大写用_ </p>
-<p>– PERSON_FIRST_NAME： </p>
-<p>• 推荐系统属性使用这种写法</p>
-<h3 id="13-Validated"><a href="#13-Validated" class="headerlink" title="13.@Validated"></a>13.@Validated</h3><p>数据校验注解。</p>
-<p>和@ConfigurationProperties结合可以生效。和@Value不生效。</p>
-<p><img src="D:%5Cgit%5Cblogs%5Csource_posts%5Cimages%5C2.png" alt></p>
-<h3 id="14-Propertysource-amp-ImportResource"><a href="#14-Propertysource-amp-ImportResource" class="headerlink" title="14.@Propertysource&amp;@ImportResource"></a>14.@Propertysource&amp;@ImportResource</h3><p>@PropertySource:加载指定的配置文件。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">@PropertySource(value = &#123;&quot;classpath:person.properties&quot;&#125;)</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">public class Person &#123;    </span><br><span class="line">   private String lastName;  </span><br><span class="line">  private Integer age;   </span><br><span class="line">  private Boolean boss;   </span><br><span class="line">  private Date birth;   </span><br><span class="line">  private Map&lt;String, Object&gt; maps;  </span><br><span class="line">  private List&lt;Object&gt; lists;   </span><br><span class="line">  private Dog dog;</span><br><span class="line">  ......</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">person.properties</span><br><span class="line"></span><br><span class="line">person.last-name=李四person.age=18person.birth=2017/12/15person.boss=falseperson.maps.k1=v1person.maps.k2=144person.lists=a,b,cperson.dog.name=dogperson.dog.age=15</span><br></pre></td></tr></table></figure>
-
-<p>@ImportResource:导入Spring的配置文件，让配置文件里面的内容生效。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.springboot;</span><br><span class="line"><span class="keyword">import</span> org.springframework.boot.SpringApplication;</span><br><span class="line"><span class="keyword">import</span>	org.springframework.boot.autoconfigure.SpringBootApplication;</span><br><span class="line"><span class="keyword">import</span> org.springframework.context.annotation.ImportResource;</span><br><span class="line"><span class="meta">@ImportResource</span>(locations = &#123;<span class="string">"classpath:beans.xml"</span>&#125;)</span><br><span class="line"><span class="meta">@SpringBootApplication</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SpringBoot01HelloworldQuickApplication</span> </span>&#123; </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;        SpringApplication.run(SpringBoot01HelloworldQuickApplication.class, args);   </span><br><span class="line">                                           &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.springboot;<span class="keyword">import</span> com.springboot.bean.Person;<span class="keyword">import</span> org.junit.Test;<span class="keyword">import</span> org.junit.runner.RunWith;<span class="keyword">import</span> org.springframework.beans.factory.annotation.Autowired;<span class="keyword">import</span> org.springframework.boot.test.context.SpringBootTesdt;<span class="keyword">import</span> org.springframework.context.ApplicationContext;<span class="keyword">import</span> org.springframework.test.context.junit4.SpringRunner;</span><br><span class="line"><span class="comment">/** * springboot单元测试: * 可以在测试期间很方便的类似编码一样自动注入等容器的功能。 */</span></span><br><span class="line"><span class="meta">@RunWith</span>(SpringRunner.class)</span><br><span class="line"><span class="meta">@SpringBootTestpublic</span> </span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">SpringBoot01HelloworldQuickApplicationTests</span> </span>&#123;   </span><br><span class="line">    <span class="meta">@Autowired</span>    </span><br><span class="line">    Person person;  </span><br><span class="line">    <span class="meta">@Autowired</span>    </span><br><span class="line">    ApplicationContext ioc;   </span><br><span class="line">    <span class="meta">@Test</span>  </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testHelloService</span><span class="params">()</span></span>&#123;     </span><br><span class="line">        <span class="keyword">boolean</span> b=ioc.containsBean(<span class="string">"helloService"</span>);       </span><br><span class="line">        System.out.println(b);    &#125; </span><br><span class="line">    <span class="meta">@Test</span>  </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">contextLoads</span><span class="params">()</span> </span>&#123;    </span><br><span class="line">        System.out.println(person);  </span><br><span class="line">                               &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="15-ApplicationContext-spring容器"><a href="#15-ApplicationContext-spring容器" class="headerlink" title="15.ApplicationContext spring容器"></a>15.ApplicationContext spring容器</h3><p>可以用来测试自己编写的bean有没有注入到spring容器中</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.springboot;</span><br><span class="line"><span class="keyword">import</span> com.springboot.bean.Person;</span><br><span class="line"><span class="keyword">import</span> org.junit.Test;<span class="keyword">import</span> org.junit.runner.RunWith;</span><br><span class="line"><span class="keyword">import</span> org.springframework.beans.factory.annotation.Autowired;</span><br><span class="line"><span class="keyword">import</span> org.springframework.boot.test.context.SpringBootTest;</span><br><span class="line"><span class="keyword">import</span> org.springframework.context.ApplicationContext;</span><br><span class="line"><span class="keyword">import</span> org.springframework.test.context.junit4.SpringRunner;</span><br><span class="line"><span class="comment">/** * springboot单元测试: * 可以在测试期间很方便的类似编码一样自动注入等容器的功能。 */</span></span><br><span class="line"><span class="meta">@RunWith</span>(SpringRunner.class)</span><br><span class="line"><span class="meta">@SpringBootTestpublic</span> <span class="class"><span class="keyword">class</span> <span class="title">SpringBoot01HelloworldQuickApplicationTests</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Autowired</span> </span><br><span class="line">    Person person;   </span><br><span class="line">    <span class="meta">@Autowired</span>   </span><br><span class="line">    ApplicationContext ioc;  </span><br><span class="line">    <span class="meta">@Test</span>  </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testHelloService</span><span class="params">()</span></span>&#123;   </span><br><span class="line">        <span class="keyword">boolean</span> b=ioc.containsBean(<span class="string">"helloService"</span>);        		System.out.println(b);   </span><br><span class="line">    &#125;   </span><br><span class="line">    <span class="meta">@Test</span> </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">contextLoads</span><span class="params">()</span> </span>&#123;        System.out.println(person);  </span><br><span class="line">                               &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="16-Configuration"><a href="#16-Configuration" class="headerlink" title="16.Configuration"></a>16.Configuration</h3><p>指明当前类是一个配置类就是来代替之前的spring配置文件。</p>
-<h3 id="17-Bean"><a href="#17-Bean" class="headerlink" title="17.Bean"></a>17.Bean</h3><p>将方法的返回值添加到容器中：容器中这个组件默认的id就是方法名。</p>
-<h3 id="18-XXXXAutoConfiguration"><a href="#18-XXXXAutoConfiguration" class="headerlink" title="18.XXXXAutoConfiguration"></a>18.XXXXAutoConfiguration</h3><p>帮我们给容器中自动配置组件</p>
-<h3 id="19-xxxxProperties"><a href="#19-xxxxProperties" class="headerlink" title="19.xxxxProperties"></a>19.xxxxProperties</h3><p>配置类来封装配置文件的内容。</p>
-<h1 id="20-getbootstrap-com"><a href="#20-getbootstrap-com" class="headerlink" title="20.getbootstrap.com"></a>20.getbootstrap.com</h1><p><a href="https://getbootstrap.com/docs/4.3/examples/" target="_blank" rel="noopener">https://getbootstrap.com/docs/4.3/examples/</a></p>
-<p><img src="D:%5Cgit%5Cblogs%5Csource_posts%5Cimages%5C7.png" alt></p>
-<p>webjars：以jar包的方式引入静态资源；</p>
-<p><a href="http://www.webjars.org/" target="_blank" rel="noopener">http://www.webjars.org/</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/07/13/springboot注解/" data-id="cjy5t0ra60003mgr8t4xpnkno" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-IEDA快捷键" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/07/13/IEDA快捷键/" class="article-date">
-  <time datetime="2019-07-13T02:32:15.000Z" itemprop="datePublished">2019-07-13</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/13/IEDA快捷键/">IEDA</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="1-断点调试"><a href="#1-断点调试" class="headerlink" title="1.断点调试"></a>1.断点调试</h2><p>​        按 step into ,执行到某一步的时候，可以按Ctrl+u,Evalute Expression计算这一步的值。</p>
-<p><img src="D:%5Cgit%5Cblogs%5Csource_posts%5Cimages%5C1.png" alt></p>
-<h2 id="2-get-set-等"><a href="#2-get-set-等" class="headerlink" title="2.get set 等"></a>2.get set 等</h2><p>​        Alt+insert  </p>
-<h2 id="3-查看maven间的依赖关系"><a href="#3-查看maven间的依赖关系" class="headerlink" title="3.查看maven间的依赖关系"></a>3.查看maven间的依赖关系</h2><p>右键+Diagrams/show dependcies或者CTRL+ATL+SHITF+U</p>
-<p><img src="D:%5Cgit%5Cblogs%5Csource_posts%5Cimages%5C6.png" alt></p>
-<h2 id="4-F2"><a href="#4-F2" class="headerlink" title="4.F2"></a>4.F2</h2><p>代码提示</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/07/13/IEDA快捷键/" data-id="cjy5t0r7p0000mgr8e3lahqi9" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-myhello" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/07/08/myhello/" class="article-date">
-  <time datetime="2019-07-08T06:30:45.000Z" itemprop="datePublished">2019-07-08</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/08/myhello/">myhello</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p> this is my first  hexo post file .It’s just used for testing that committing  files  to github.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/07/08/myhello/" data-id="cjy5t0r910002mgr8gqsm8dxb" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/06/28/hello-world/" class="article-date">
-  <time datetime="2019-06-28T03:26:56.266Z" itemprop="datePublished">2019-06-28</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/06/28/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/06/28/hello-world/" data-id="cjy5t0r8l0001mgr8gr0p0nmd" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
