@@ -104,6 +104,47 @@
 
 
   
+    <article id="post-hn注解" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/11/19/hn注解/" class="article-date">
+  <time datetime="2019-11-19T02:52:10.000Z" itemprop="datePublished">2019-11-19</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/11/19/hn注解/">hn注解</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="1-ToString"><a href="#1-ToString" class="headerlink" title="1.@ToString"></a>1.@ToString</h3><p>对于重写toString方法这件事大多数的做法都是把变量按照顺序，用提示语句区分，逐个打印出来，不知道屏幕前的小伙伴有多少为了这样事情苦恼的。因为写这样的代码实在头疼，又要关注拼接字符串的格式。在Lombok中，一个@ToString annotation很好的解决了这个问题。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> lombok.ToString;  </span><br><span class="line">  </span><br><span class="line"><span class="meta">@ToString</span>(exclude=<span class="string">"id"</span>)  </span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ToStringExample</span> </span>&#123;  </span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> STATIC_VAR = <span class="number">10</span>;  </span><br><span class="line">  <span class="keyword">private</span> String name;  </span><br><span class="line">  <span class="keyword">private</span> Shape shape = <span class="keyword">new</span> Square(<span class="number">5</span>, <span class="number">10</span>);  </span><br><span class="line">  <span class="keyword">private</span> String[] tags;  </span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">int</span> id;  </span><br><span class="line">    </span><br><span class="line">  <span class="function"><span class="keyword">public</span> String <span class="title">getName</span><span class="params">()</span> </span>&#123;  </span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.getName();  </span><br><span class="line">  &#125;  </span><br><span class="line">    </span><br><span class="line">  <span class="meta">@ToString</span>(callSuper=<span class="keyword">true</span>, includeFieldNames=<span class="keyword">true</span>)  </span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">Square</span> <span class="keyword">extends</span> <span class="title">Shape</span> </span>&#123;  </span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">final</span> <span class="keyword">int</span> width, height;  </span><br><span class="line">      </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Square</span><span class="params">(<span class="keyword">int</span> width, <span class="keyword">int</span> height)</span> </span>&#123;  </span><br><span class="line">      <span class="keyword">this</span>.width = width;  </span><br><span class="line">      <span class="keyword">this</span>.height = height;  </span><br><span class="line">    &#125;  </span><br><span class="line">  &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/11/19/hn注解/" data-id="ck47sijoz0000vsr8zv3830rc" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/lombok注解/">lombok注解</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-springmvc回顾" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/09/30/springmvc回顾/" class="article-date">
@@ -632,6 +673,51 @@ void updateUsersNameById(String name,Integer id);</code></pre><h3 id="12-OneToMa
       <a data-url="http://yoursite.com/2019/08/25/spring配置文件解析/" data-id="ck47s7r450005r4r8bg4cxiqt" class="article-share-link">Share</a>
       
       
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-ssm微博项目帮助解读" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/07/31/ssm微博项目帮助解读/" class="article-date">
+  <time datetime="2019-07-31T06:14:08.000Z" itemprop="datePublished">2019-07-31</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/07/31/ssm微博项目帮助解读/">ssm微博项目帮助解读</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="1-oracle分页"><a href="#1-oracle分页" class="headerlink" title="1.oracle分页"></a>1.oracle分页</h2><p>​        ROWNUM是一种伪列，它会根据返回记录生成一个序列化的数字。利用ROWNUM，我们可以生产一些原先难以实现的结果输出，但因为它是伪列的这个特殊性，我们在使用时也需要注意一些事项，不要掉入“陷阱”。下面就介绍一下它的使用技巧及注意事项。</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">"findConchByNews"</span> <span class="attr">resultType</span>=<span class="string">"Conch"</span>&gt;</span></span><br><span class="line">		SELECT id,</span><br><span class="line">			userId,</span><br><span class="line">			cNumber,</span><br><span class="line">			conchBody,</span><br><span class="line">			adoptId,</span><br><span class="line">			state,</span><br><span class="line">			to_char(conchTime,'yyyy-mm-dd hh24:mi:ss') as conchTime</span><br><span class="line">		 FROM </span><br><span class="line">			(</span><br><span class="line">				SELECT A.*, ROWNUM RN </span><br><span class="line">				FROM (SELECT * FROM conch_tab ORDER BY conchTime DESC) A </span><br><span class="line">				WHERE ROWNUM &lt;![CDATA[&lt;=]]&gt; #&#123;param2&#125;</span><br><span class="line">			)</span><br><span class="line">		WHERE RN &lt;![CDATA[&gt;=]]&gt; #&#123;param1&#125;</span><br><span class="line">	<span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>详细代码如下：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">SELECT id,</span><br><span class="line">      userId,</span><br><span class="line">      cNumber,</span><br><span class="line">      conchBody,</span><br><span class="line">      adoptId,</span><br><span class="line">      state,</span><br><span class="line">      to_char(conchTime,'yyyy-mm-dd hh24:mi:ss') as conchTime</span><br><span class="line">     FROM </span><br><span class="line">      (</span><br><span class="line">        SELECT A.*, ROWNUM RN </span><br><span class="line">        FROM (SELECT * FROM conch_tab ORDER BY conchTime DESC) A </span><br><span class="line">        WHERE ROWNUM <span class="tag">&lt;<span class="name">=3</span></span></span><br><span class="line"><span class="tag">      )</span></span><br><span class="line"><span class="tag">    <span class="attr">WHERE</span> <span class="attr">RN</span> &gt;</span>=1</span><br></pre></td></tr></table></figure>
+
+<p><img src="D:%5Cgit%5Cblogs%5Csource_posts%5Cimages%5C8.png" alt></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/07/31/ssm微博项目帮助解读/" data-id="ck47siju40003vsr86tljt0tr" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/项目解读/">项目解读</a></li></ul>
+
     </footer>
   </div>
   
@@ -2326,93 +2412,12 @@ void updateUsersNameById(String name,Integer id);</code></pre><h3 id="12-OneToMa
 
 
   
-    <article id="post-myhello" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/07/08/myhello/" class="article-date">
-  <time datetime="2019-07-08T06:30:45.000Z" itemprop="datePublished">2019-07-08</time>
-</a>
+
+
+  <nav id="page-nav">
     
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/08/myhello/">myhello</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p> this is my first  hexo post file .It’s just used for testing that committing  files  to github.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/07/08/myhello/" data-id="ck47s7r3n0003r4r87ftdr3ch" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/06/28/hello-world/" class="article-date">
-  <time datetime="2019-06-28T03:26:56.266Z" itemprop="datePublished">2019-06-28</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/06/28/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/06/28/hello-world/" data-id="ck47s7r2e0001r4r86knzg3h0" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+  </nav>
 
 </section>
         
@@ -2422,15 +2427,29 @@ void updateUsersNameById(String name,Integer id);</code></pre><h3 id="12-OneToMa
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/lombok注解/">lombok注解</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/项目解读/">项目解读</a></li></ul>
+    </div>
+  </div>
+
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/lombok注解/" style="font-size: 10px;">lombok注解</a> <a href="/tags/项目解读/" style="font-size: 10px;">项目解读</a>
+    </div>
+  </div>
+
   
     
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a></li></ul>
     </div>
   </div>
 
@@ -2447,6 +2466,10 @@ void updateUsersNameById(String name,Integer id);</code></pre><h3 id="12-OneToMa
           </li>
         
           <li>
+            <a href="/2019/11/19/hn注解/">hn注解</a>
+          </li>
+        
+          <li>
             <a href="/2019/09/30/springmvc回顾/">springmvc回顾</a>
           </li>
         
@@ -2456,10 +2479,6 @@ void updateUsersNameById(String name,Integer id);</code></pre><h3 id="12-OneToMa
         
           <li>
             <a href="/2019/08/30/springdData注解/">springdData注解</a>
-          </li>
-        
-          <li>
-            <a href="/2019/08/25/spring配置文件解析/">spring配置文件解析</a>
           </li>
         
       </ul>

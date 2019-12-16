@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>hn注解 | wq-9</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="1.@ToString对于重写toString方法这件事大多数的做法都是把变量按照顺序，用提示语句区分，逐个打印出来，不知道屏幕前的小伙伴有多少为了这样事情苦恼的。因为写这样的代码实在头疼，又要关注拼接字符串的格式。在Lombok中，一个@ToString annotation很好的解决了这个问题。 123456789101112131415161718192021222324import lom">
+<meta name="keywords" content="lombok注解">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hn注解">
+<meta property="og:url" content="http://yoursite.com/2019/11/19/hn注解/index.html">
+<meta property="og:site_name" content="wq-9">
+<meta property="og:description" content="1.@ToString对于重写toString方法这件事大多数的做法都是把变量按照顺序，用提示语句区分，逐个打印出来，不知道屏幕前的小伙伴有多少为了这样事情苦恼的。因为写这样的代码实在头疼，又要关注拼接字符串的格式。在Lombok中，一个@ToString annotation很好的解决了这个问题。 123456789101112131415161718192021222324import lom">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-12-16T01:58:42.415Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="hn注解">
+<meta name="twitter:description" content="1.@ToString对于重写toString方法这件事大多数的做法都是把变量按照顺序，用提示语句区分，逐个打印出来，不知道屏幕前的小伙伴有多少为了这样事情苦恼的。因为写这样的代码实在头疼，又要关注拼接字符串的格式。在Lombok中，一个@ToString annotation很好的解决了这个问题。 123456789101112131415161718192021222324import lom">
+  
+    <link rel="alternate" href="/atom.xml" title="wq-9" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">wq-9</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-hn注解" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/11/19/hn注解/" class="article-date">
+  <time datetime="2019-11-19T02:52:10.000Z" itemprop="datePublished">2019-11-19</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      hn注解
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="1-ToString"><a href="#1-ToString" class="headerlink" title="1.@ToString"></a>1.@ToString</h3><p>对于重写toString方法这件事大多数的做法都是把变量按照顺序，用提示语句区分，逐个打印出来，不知道屏幕前的小伙伴有多少为了这样事情苦恼的。因为写这样的代码实在头疼，又要关注拼接字符串的格式。在Lombok中，一个@ToString annotation很好的解决了这个问题。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> lombok.ToString;  </span><br><span class="line">  </span><br><span class="line"><span class="meta">@ToString</span>(exclude=<span class="string">"id"</span>)  </span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ToStringExample</span> </span>&#123;  </span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> STATIC_VAR = <span class="number">10</span>;  </span><br><span class="line">  <span class="keyword">private</span> String name;  </span><br><span class="line">  <span class="keyword">private</span> Shape shape = <span class="keyword">new</span> Square(<span class="number">5</span>, <span class="number">10</span>);  </span><br><span class="line">  <span class="keyword">private</span> String[] tags;  </span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">int</span> id;  </span><br><span class="line">    </span><br><span class="line">  <span class="function"><span class="keyword">public</span> String <span class="title">getName</span><span class="params">()</span> </span>&#123;  </span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.getName();  </span><br><span class="line">  &#125;  </span><br><span class="line">    </span><br><span class="line">  <span class="meta">@ToString</span>(callSuper=<span class="keyword">true</span>, includeFieldNames=<span class="keyword">true</span>)  </span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">Square</span> <span class="keyword">extends</span> <span class="title">Shape</span> </span>&#123;  </span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">final</span> <span class="keyword">int</span> width, height;  </span><br><span class="line">      </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Square</span><span class="params">(<span class="keyword">int</span> width, <span class="keyword">int</span> height)</span> </span>&#123;  </span><br><span class="line">      <span class="keyword">this</span>.width = width;  </span><br><span class="line">      <span class="keyword">this</span>.height = height;  </span><br><span class="line">    &#125;  </span><br><span class="line">  &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/11/19/hn注解/" data-id="ck47sijoz0000vsr8zv3830rc" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/lombok注解/">lombok注解</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/12/06/activiti总结/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          activiti总结
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/09/30/springmvc回顾/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">springmvc回顾</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/lombok注解/">lombok注解</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/项目解读/">项目解读</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/lombok注解/" style="font-size: 10px;">lombok注解</a> <a href="/tags/项目解读/" style="font-size: 10px;">项目解读</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/12/06/activiti总结/">activiti总结</a>
+          </li>
+        
+          <li>
+            <a href="/2019/11/19/hn注解/">hn注解</a>
+          </li>
+        
+          <li>
+            <a href="/2019/09/30/springmvc回顾/">springmvc回顾</a>
+          </li>
+        
+          <li>
+            <a href="/2019/09/30/spring回顾/">spring回顾</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/30/springdData注解/">springdData注解</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

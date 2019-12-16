@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>ssm微博项目帮助解读 | wq-9</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="1.oracle分页​        ROWNUM是一种伪列，它会根据返回记录生成一个序列化的数字。利用ROWNUM，我们可以生产一些原先难以实现的结果输出，但因为它是伪列的这个特殊性，我们在使用时也需要注意一些事项，不要掉入“陷阱”。下面就介绍一下它的使用技巧及注意事项。 12345678910111213141516&amp;lt;select id=&quot;findConchByNews&quot; resultT">
+<meta name="keywords" content="项目解读">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ssm微博项目帮助解读">
+<meta property="og:url" content="http://yoursite.com/2019/07/31/ssm微博项目帮助解读/index.html">
+<meta property="og:site_name" content="wq-9">
+<meta property="og:description" content="1.oracle分页​        ROWNUM是一种伪列，它会根据返回记录生成一个序列化的数字。利用ROWNUM，我们可以生产一些原先难以实现的结果输出，但因为它是伪列的这个特殊性，我们在使用时也需要注意一些事项，不要掉入“陷阱”。下面就介绍一下它的使用技巧及注意事项。 12345678910111213141516&amp;lt;select id=&quot;findConchByNews&quot; resultT">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="d:%5Cgit%5Cblogs%5Csource_posts%5Cimages%5C8.png">
+<meta property="og:updated_time" content="2019-12-16T01:59:02.142Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="ssm微博项目帮助解读">
+<meta name="twitter:description" content="1.oracle分页​        ROWNUM是一种伪列，它会根据返回记录生成一个序列化的数字。利用ROWNUM，我们可以生产一些原先难以实现的结果输出，但因为它是伪列的这个特殊性，我们在使用时也需要注意一些事项，不要掉入“陷阱”。下面就介绍一下它的使用技巧及注意事项。 12345678910111213141516&amp;lt;select id=&quot;findConchByNews&quot; resultT">
+<meta name="twitter:image" content="d:%5Cgit%5Cblogs%5Csource_posts%5Cimages%5C8.png">
+  
+    <link rel="alternate" href="/atom.xml" title="wq-9" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">wq-9</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-ssm微博项目帮助解读" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/07/31/ssm微博项目帮助解读/" class="article-date">
+  <time datetime="2019-07-31T06:14:08.000Z" itemprop="datePublished">2019-07-31</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      ssm微博项目帮助解读
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="1-oracle分页"><a href="#1-oracle分页" class="headerlink" title="1.oracle分页"></a>1.oracle分页</h2><p>​        ROWNUM是一种伪列，它会根据返回记录生成一个序列化的数字。利用ROWNUM，我们可以生产一些原先难以实现的结果输出，但因为它是伪列的这个特殊性，我们在使用时也需要注意一些事项，不要掉入“陷阱”。下面就介绍一下它的使用技巧及注意事项。</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">"findConchByNews"</span> <span class="attr">resultType</span>=<span class="string">"Conch"</span>&gt;</span></span><br><span class="line">		SELECT id,</span><br><span class="line">			userId,</span><br><span class="line">			cNumber,</span><br><span class="line">			conchBody,</span><br><span class="line">			adoptId,</span><br><span class="line">			state,</span><br><span class="line">			to_char(conchTime,'yyyy-mm-dd hh24:mi:ss') as conchTime</span><br><span class="line">		 FROM </span><br><span class="line">			(</span><br><span class="line">				SELECT A.*, ROWNUM RN </span><br><span class="line">				FROM (SELECT * FROM conch_tab ORDER BY conchTime DESC) A </span><br><span class="line">				WHERE ROWNUM &lt;![CDATA[&lt;=]]&gt; #&#123;param2&#125;</span><br><span class="line">			)</span><br><span class="line">		WHERE RN &lt;![CDATA[&gt;=]]&gt; #&#123;param1&#125;</span><br><span class="line">	<span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>详细代码如下：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">SELECT id,</span><br><span class="line">      userId,</span><br><span class="line">      cNumber,</span><br><span class="line">      conchBody,</span><br><span class="line">      adoptId,</span><br><span class="line">      state,</span><br><span class="line">      to_char(conchTime,'yyyy-mm-dd hh24:mi:ss') as conchTime</span><br><span class="line">     FROM </span><br><span class="line">      (</span><br><span class="line">        SELECT A.*, ROWNUM RN </span><br><span class="line">        FROM (SELECT * FROM conch_tab ORDER BY conchTime DESC) A </span><br><span class="line">        WHERE ROWNUM <span class="tag">&lt;<span class="name">=3</span></span></span><br><span class="line"><span class="tag">      )</span></span><br><span class="line"><span class="tag">    <span class="attr">WHERE</span> <span class="attr">RN</span> &gt;</span>=1</span><br></pre></td></tr></table></figure>
+
+<p><img src="D:%5Cgit%5Cblogs%5Csource_posts%5Cimages%5C8.png" alt></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/07/31/ssm微博项目帮助解读/" data-id="ck47siju40003vsr86tljt0tr" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/项目解读/">项目解读</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/08/25/spring配置文件解析/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          spring配置文件解析
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/07/16/springboot/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">springboot</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/lombok注解/">lombok注解</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/项目解读/">项目解读</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/lombok注解/" style="font-size: 10px;">lombok注解</a> <a href="/tags/项目解读/" style="font-size: 10px;">项目解读</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/12/06/activiti总结/">activiti总结</a>
+          </li>
+        
+          <li>
+            <a href="/2019/11/19/hn注解/">hn注解</a>
+          </li>
+        
+          <li>
+            <a href="/2019/09/30/springmvc回顾/">springmvc回顾</a>
+          </li>
+        
+          <li>
+            <a href="/2019/09/30/spring回顾/">spring回顾</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/30/springdData注解/">springdData注解</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
