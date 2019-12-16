@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>springdData注解 | wq-9</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="1.@Entity表示当前这个类是实体类 2.@Table(name=”t_users”)告诉hibernate该实体与数据库中的此表名所对应 3.@Id4.@GeneratedValue(strategy=GenerationType.IDENTITY)//该主键生成策略表示自增长5.@Column(name=”userid”)1234567891011121314151617181920212">
+<meta property="og:type" content="article">
+<meta property="og:title" content="springdData注解">
+<meta property="og:url" content="http://yoursite.com/2019/08/30/springdData注解/index.html">
+<meta property="og:site_name" content="wq-9">
+<meta property="og:description" content="1.@Entity表示当前这个类是实体类 2.@Table(name=”t_users”)告诉hibernate该实体与数据库中的此表名所对应 3.@Id4.@GeneratedValue(strategy=GenerationType.IDENTITY)//该主键生成策略表示自增长5.@Column(name=”userid”)1234567891011121314151617181920212">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-09-07T08:49:26.335Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="springdData注解">
+<meta name="twitter:description" content="1.@Entity表示当前这个类是实体类 2.@Table(name=”t_users”)告诉hibernate该实体与数据库中的此表名所对应 3.@Id4.@GeneratedValue(strategy=GenerationType.IDENTITY)//该主键生成策略表示自增长5.@Column(name=”userid”)1234567891011121314151617181920212">
+  
+    <link rel="alternate" href="/atom.xml" title="wq-9" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">wq-9</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-springdData注解" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/08/30/springdData注解/" class="article-date">
+  <time datetime="2019-08-30T06:03:40.000Z" itemprop="datePublished">2019-08-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      springdData注解
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="1-Entity"><a href="#1-Entity" class="headerlink" title="1.@Entity"></a>1.@Entity</h3><p>表示当前这个类是实体类</p>
+<h3 id="2-Table-name-”t-users”"><a href="#2-Table-name-”t-users”" class="headerlink" title="2.@Table(name=”t_users”)"></a>2.@Table(name=”t_users”)</h3><p>告诉hibernate该实体与数据库中的此表名所对应</p>
+<h3 id="3-Id"><a href="#3-Id" class="headerlink" title="3.@Id"></a>3.@Id</h3><h3 id="4-GeneratedValue-strategy-GenerationType-IDENTITY-该主键生成策略表示自增长"><a href="#4-GeneratedValue-strategy-GenerationType-IDENTITY-该主键生成策略表示自增长" class="headerlink" title="4.@GeneratedValue(strategy=GenerationType.IDENTITY)//该主键生成策略表示自增长"></a>4.@GeneratedValue(strategy=GenerationType.IDENTITY)//该主键生成策略表示自增长</h3><h3 id="5-Column-name-”userid”"><a href="#5-Column-name-”userid”" class="headerlink" title="5.@Column(name=”userid”)"></a>5.@Column(name=”userid”)</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.pojo;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.io.Serializable;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> javax.persistence.Column;</span><br><span class="line"><span class="keyword">import</span> javax.persistence.Entity;</span><br><span class="line"><span class="keyword">import</span> javax.persistence.GeneratedValue;</span><br><span class="line"><span class="keyword">import</span> javax.persistence.GenerationType;</span><br><span class="line"><span class="keyword">import</span> javax.persistence.Id;</span><br><span class="line"><span class="keyword">import</span> javax.persistence.Table;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@Entity</span></span><br><span class="line"><span class="meta">@Table</span>(name=<span class="string">"t_users"</span>)</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Users</span> <span class="keyword">implements</span> <span class="title">Serializable</span></span>&#123;</span><br><span class="line">	<span class="meta">@Id</span></span><br><span class="line">	<span class="meta">@GeneratedValue</span>(strategy=GenerationType.IDENTITY)<span class="comment">//该主键生成策略表示自增长</span></span><br><span class="line">	<span class="meta">@Column</span>(name=<span class="string">"userid"</span>)</span><br><span class="line">	<span class="keyword">private</span> Integer userid;</span><br><span class="line">	<span class="meta">@Column</span>(name=<span class="string">"username"</span>)</span><br><span class="line">	<span class="keyword">private</span> String username;</span><br><span class="line">	<span class="meta">@Column</span>(name=<span class="string">"userage"</span>)</span><br><span class="line">	<span class="keyword">private</span> Integer userage;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="6-RunWith-SpringJUnit4ClassRunner-class"><a href="#6-RunWith-SpringJUnit4ClassRunner-class" class="headerlink" title="6.@RunWith(SpringJUnit4ClassRunner.class)"></a>6.@RunWith(SpringJUnit4ClassRunner.class)</h3><p>@ContextConfiguration(“classpath:applicationContext.xml”)</p>
+<p>junit测试类。</p>
+<h3 id="7-Test"><a href="#7-Test" class="headerlink" title="7.@Test"></a>7.@Test</h3><pre><code>@Transactional  //在测试类对于事务的提交方式默认是回滚
+@Rollback(false)    //取消自动回滚</code></pre><h3 id="8-Query"><a href="#8-Query" class="headerlink" title="8.@Query"></a>8.@Query</h3><h4 id="8-1"><a href="#8-1" class="headerlink" title="8.1"></a>8.1</h4><p>//使用@Query注解查询SQL<br>    //nativeQuery:默认的是false,表示不开启sql查询，是否对value中的语句做转译。<br>    @Query(value=”select * from t_users where username =?”,nativeQuery=true)<br>    List<users> queryUserByNameUseSQL(String name);</users></p>
+<h4 id="8-2"><a href="#8-2" class="headerlink" title="8.2"></a>8.2</h4><p>@Query(“update Users set userage=? where userid=?”)<br>    @Modifying //当前的语句是一个跟新语句<br>    void updateUserAgeById(Integer age,Integer id);</p>
+<h3 id="9-JoinColumn-就是维护一个外键"><a href="#9-JoinColumn-就是维护一个外键" class="headerlink" title="9.@JoinColumn:就是维护一个外键"></a>9.@JoinColumn:就是维护一个外键</h3><p>@OneToOne<br>    @JoinColumn(name=”roles_id”)<br>    private Roles roles;</p>
+<p>另一个实体类的配置如下：</p>
+<p>@OneToOne(mappedBy=”roles”)<br>    private Users users;</p>
+<h3 id="10-Transactional"><a href="#10-Transactional" class="headerlink" title="10.@Transactional"></a>10.@Transactional</h3><p>@Test<br>    @Transactional<br>    @Rollback(false)<br>    public void testUpdateUsersNameById(){<br>          this.usersRepositoryQueryAnnotation.updateUsersNameById(“张三三”, 1);</p>
+<pre><code>}</code></pre><p>}</p>
+<h3 id="11-Modifying"><a href="#11-Modifying" class="headerlink" title="11.@Modifying"></a>11.@Modifying</h3><pre><code>@Query(&quot;update Users set name=? where id=?&quot;)
+@Modifying //需要执行一个跟新操作
+void updateUsersNameById(String name,Integer id);</code></pre><h3 id="12-OneToMany-ManyToMany"><a href="#12-OneToMany-ManyToMany" class="headerlink" title="12@OneToMany @ManyToMany"></a>12@OneToMany @ManyToMany</h3><p>@OneToMany(mappedBy=”roles”)<br>    private Set<users> users = new HashSet&lt;&gt;();</users></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.bjsxt.pojo;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.HashSet;</span><br><span class="line"><span class="keyword">import</span> java.util.Set;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> javax.persistence.CascadeType;</span><br><span class="line"><span class="keyword">import</span> javax.persistence.Column;</span><br><span class="line"><span class="keyword">import</span> javax.persistence.Entity;</span><br><span class="line"><span class="keyword">import</span> javax.persistence.FetchType;</span><br><span class="line"><span class="keyword">import</span> javax.persistence.GeneratedValue;</span><br><span class="line"><span class="keyword">import</span> javax.persistence.GenerationType;</span><br><span class="line"><span class="keyword">import</span> javax.persistence.Id;</span><br><span class="line"><span class="keyword">import</span> javax.persistence.JoinColumn;</span><br><span class="line"><span class="keyword">import</span> javax.persistence.JoinTable;</span><br><span class="line"><span class="keyword">import</span> javax.persistence.ManyToMany;</span><br><span class="line"><span class="keyword">import</span> javax.persistence.OneToMany;</span><br><span class="line"><span class="keyword">import</span> javax.persistence.Table;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Entity</span></span><br><span class="line"><span class="meta">@Table</span>(name=<span class="string">"t_roles"</span>)</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Roles</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="meta">@Id</span></span><br><span class="line">	<span class="meta">@GeneratedValue</span>(strategy=GenerationType.IDENTITY)</span><br><span class="line">	<span class="meta">@Column</span>(name=<span class="string">"roleid"</span>)</span><br><span class="line">	<span class="keyword">private</span> Integer roleid;</span><br><span class="line">	</span><br><span class="line">	<span class="meta">@Column</span>(name=<span class="string">"rolename"</span>)</span><br><span class="line">	<span class="keyword">private</span> String rolename;</span><br><span class="line">	</span><br><span class="line">	<span class="meta">@OneToMany</span>(mappedBy=<span class="string">"roles"</span>)</span><br><span class="line">	<span class="keyword">private</span> Set&lt;Users&gt; users = <span class="keyword">new</span> HashSet&lt;&gt;();</span><br><span class="line"></span><br><span class="line">	<span class="meta">@ManyToMany</span>(cascade=CascadeType.PERSIST,fetch=FetchType.EAGER)</span><br><span class="line">	<span class="comment">//@JoinTable:映射中间表</span></span><br><span class="line">	<span class="comment">//joinColumns:当前表中的主键所关联的中间表中的外键字段</span></span><br><span class="line">	<span class="meta">@JoinTable</span>(name=<span class="string">"t_roles_menus"</span>,joinColumns=<span class="meta">@JoinColumn</span>(name=<span class="string">"role_id"</span>),inverseJoinColumns=<span class="meta">@JoinColumn</span>(name=<span class="string">"menu_id"</span>))</span><br><span class="line">	<span class="keyword">private</span> Set&lt;Menus&gt; menus = <span class="keyword">new</span> HashSet&lt;&gt;();</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> Integer <span class="title">getRoleid</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> roleid;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setRoleid</span><span class="params">(Integer roleid)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.roleid = roleid;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> String <span class="title">getRolename</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> rolename;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setRolename</span><span class="params">(String rolename)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.rolename = rolename;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> Set&lt;Users&gt; <span class="title">getUsers</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> users;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setUsers</span><span class="params">(Set&lt;Users&gt; users)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.users = users;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> Set&lt;Menus&gt; <span class="title">getMenus</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> menus;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setMenus</span><span class="params">(Set&lt;Menus&gt; menus)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.menus = menus;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.bjsxt.pojo;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> javax.persistence.CascadeType;</span><br><span class="line"><span class="keyword">import</span> javax.persistence.Column;</span><br><span class="line"><span class="keyword">import</span> javax.persistence.Entity;</span><br><span class="line"><span class="keyword">import</span> javax.persistence.GeneratedValue;</span><br><span class="line"><span class="keyword">import</span> javax.persistence.GenerationType;</span><br><span class="line"><span class="keyword">import</span> javax.persistence.Id;</span><br><span class="line"><span class="keyword">import</span> javax.persistence.JoinColumn;</span><br><span class="line"><span class="keyword">import</span> javax.persistence.ManyToOne;</span><br><span class="line"><span class="keyword">import</span> javax.persistence.Table;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Entity</span></span><br><span class="line"><span class="meta">@Table</span>(name=<span class="string">"t_users"</span>)</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Users</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="meta">@Id</span></span><br><span class="line">	<span class="meta">@GeneratedValue</span>(strategy=GenerationType.IDENTITY)</span><br><span class="line">	<span class="meta">@Column</span>(name=<span class="string">"id"</span>)</span><br><span class="line">	<span class="keyword">private</span> Integer id;</span><br><span class="line">	</span><br><span class="line">	<span class="meta">@Column</span>(name=<span class="string">"name"</span>)</span><br><span class="line">	<span class="keyword">private</span> String name;</span><br><span class="line">	</span><br><span class="line">	<span class="meta">@Column</span>(name=<span class="string">"age"</span>)</span><br><span class="line">	<span class="keyword">private</span> Integer age;</span><br><span class="line">	</span><br><span class="line">	<span class="meta">@Column</span>(name=<span class="string">"address"</span>)</span><br><span class="line">	<span class="keyword">private</span> String address;</span><br><span class="line">	</span><br><span class="line">	<span class="meta">@ManyToOne</span>(cascade=CascadeType.PERSIST)</span><br><span class="line">	<span class="comment">//@JoinColumn:维护外键</span></span><br><span class="line">	<span class="meta">@JoinColumn</span>(name=<span class="string">"roles_id"</span>)</span><br><span class="line">	<span class="keyword">private</span> Roles roles;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> Integer <span class="title">getId</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> id;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setId</span><span class="params">(Integer id)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.id = id;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> String <span class="title">getName</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> name;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setName</span><span class="params">(String name)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.name = name;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> Integer <span class="title">getAge</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> age;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setAge</span><span class="params">(Integer age)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.age = age;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> String <span class="title">getAddress</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> address;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setAddress</span><span class="params">(String address)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.address = address;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="string">"Users [id="</span> + id + <span class="string">", name="</span> + name + <span class="string">", age="</span> + age + <span class="string">", address="</span> + address + <span class="string">"]"</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> Roles <span class="title">getRoles</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> roles;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setRoles</span><span class="params">(Roles roles)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.roles = roles;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br></pre></td><td class="code"><pre><span class="line">package com.bjsxt.pojo;</span><br><span class="line"></span><br><span class="line">import java.util.HashSet;</span><br><span class="line">import java.util.Set;</span><br><span class="line"></span><br><span class="line">import javax.persistence.Column;</span><br><span class="line">import javax.persistence.Entity;</span><br><span class="line">import javax.persistence.GeneratedValue;</span><br><span class="line">import javax.persistence.GenerationType;</span><br><span class="line">import javax.persistence.Id;</span><br><span class="line">import javax.persistence.ManyToMany;</span><br><span class="line">import javax.persistence.Table;</span><br><span class="line"></span><br><span class="line">@Entity</span><br><span class="line">@Table(name=&quot;t_menus&quot;)</span><br><span class="line">public class Menus &#123;</span><br><span class="line"></span><br><span class="line">	@Id</span><br><span class="line">	@GeneratedValue(strategy=GenerationType.IDENTITY)</span><br><span class="line">	@Column(name=&quot;menusid&quot;)</span><br><span class="line">	private Integer menusid;</span><br><span class="line">	</span><br><span class="line">	@Column(name=&quot;menusname&quot;)</span><br><span class="line">	private String menusname;</span><br><span class="line">	</span><br><span class="line">	@Column(name=&quot;menusurl&quot;)</span><br><span class="line">	private String menusurl;</span><br><span class="line">	</span><br><span class="line">	@Column(name=&quot;fatherid&quot;)</span><br><span class="line">	private Integer fatherid;</span><br><span class="line">	</span><br><span class="line">	@ManyToMany(mappedBy=&quot;menus&quot;)</span><br><span class="line">	private Set&lt;Roles&gt; roles = new HashSet&lt;&gt;();</span><br><span class="line"></span><br><span class="line">	public Integer getMenusid() &#123;</span><br><span class="line">		return menusid;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	public void setMenusid(Integer menusid) &#123;</span><br><span class="line">		this.menusid = menusid;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	public String getMenusname() &#123;</span><br><span class="line">		return menusname;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	public void setMenusname(String menusname) &#123;</span><br><span class="line">		this.menusname = menusname;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	public String getMenusurl() &#123;</span><br><span class="line">		return menusurl;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	public void setMenusurl(String menusurl) &#123;</span><br><span class="line">		this.menusurl = menusurl;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	public Integer getFatherid() &#123;</span><br><span class="line">		return fatherid;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	public void setFatherid(Integer fatherid) &#123;</span><br><span class="line">		this.fatherid = fatherid;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	public Set&lt;Roles&gt; getRoles() &#123;</span><br><span class="line">		return roles;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	public void setRoles(Set&lt;Roles&gt; roles) &#123;</span><br><span class="line">		this.roles = roles;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	@Override</span><br><span class="line">	public String toString() &#123;</span><br><span class="line">		return &quot;Menus [menusid=&quot; + menusid + &quot;, menusname=&quot; + menusname + &quot;, menusurl=&quot; + menusurl + &quot;, fatherid=&quot;</span><br><span class="line">				+ fatherid + &quot;]&quot;;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="13-ConfigurationProperties-prefix-”spring-redis-pool”"><a href="#13-ConfigurationProperties-prefix-”spring-redis-pool”" class="headerlink" title="13.@ConfigurationProperties(prefix=”spring.redis.pool”)"></a>13.@ConfigurationProperties(prefix=”spring.redis.pool”)</h3>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/08/30/springdData注解/" data-id="ck47s1zky00040wr8n1lfa7mv" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/09/30/spring回顾/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          spring回顾
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/08/25/spring配置文件解析/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">spring配置文件解析</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/12/06/activiti总结/">activiti总结</a>
+          </li>
+        
+          <li>
+            <a href="/2019/09/30/springmvc回顾/">springmvc回顾</a>
+          </li>
+        
+          <li>
+            <a href="/2019/09/30/spring回顾/">spring回顾</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/30/springdData注解/">springdData注解</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/25/spring配置文件解析/">spring配置文件解析</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

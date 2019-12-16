@@ -5,15 +5,19 @@
   
 
   
-  <title>Archives: 2019/6 | wq-9</title>
+  <title>activiti总结 | wq-9</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="wq-9">
-<meta property="og:url" content="http://yoursite.com/archives/2019/06/index.html">
+  <meta name="description" content="1.@JsonFormat(pattern=”yyyy-MM–DD”,timezone=”GMT-8”)是将String转换成Date，一般前台给后台传值时用 2.@DateTimeFormat(pattern=”yyyy-MM-dd”)将Date转换成String 一般后台传值给前台时 注意 @JsonFormat不仅可以完成后台到前台参数传递的类型转换，还可以实现前台到后台类型转换。 当con">
+<meta property="og:type" content="article">
+<meta property="og:title" content="activiti总结">
+<meta property="og:url" content="http://yoursite.com/2019/12/06/activiti总结/index.html">
 <meta property="og:site_name" content="wq-9">
+<meta property="og:description" content="1.@JsonFormat(pattern=”yyyy-MM–DD”,timezone=”GMT-8”)是将String转换成Date，一般前台给后台传值时用 2.@DateTimeFormat(pattern=”yyyy-MM-dd”)将Date转换成String 一般后台传值给前台时 注意 @JsonFormat不仅可以完成后台到前台参数传递的类型转换，还可以实现前台到后台类型转换。 当con">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-12-07T02:08:26.205Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="wq-9">
+<meta name="twitter:title" content="activiti总结">
+<meta name="twitter:description" content="1.@JsonFormat(pattern=”yyyy-MM–DD”,timezone=”GMT-8”)是将String转换成Date，一般前台给后台传值时用 2.@DateTimeFormat(pattern=”yyyy-MM-dd”)将Date转换成String 一般后台传值给前台时 注意 @JsonFormat不仅可以完成后台到前台参数传递的类型转换，还可以实现前台到后台类型转换。 当con">
   
     <link rel="alternate" href="/atom.xml" title="wq-9" type="application/atom+xml">
   
@@ -60,40 +64,57 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/06/28/hello-world/" class="archive-article-date">
-  <time datetime="2019-06-28T03:26:56.266Z" itemprop="datePublished">Jun 28</time>
+        <section id="main"><article id="post-activiti总结" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/12/06/activiti总结/" class="article-date">
+  <time datetime="2019-12-06T14:42:27.000Z" itemprop="datePublished">2019-12-06</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/06/28/hello-world/">Hello World</a>
+    <h1 class="article-title" itemprop="name">
+      activiti总结
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h5 id="1-JsonFormat-pattern-”yyyy-MM–DD”-timezone-”GMT-8”"><a href="#1-JsonFormat-pattern-”yyyy-MM–DD”-timezone-”GMT-8”" class="headerlink" title="1.@JsonFormat(pattern=”yyyy-MM–DD”,timezone=”GMT-8”)"></a>1.@JsonFormat(pattern=”yyyy-MM–DD”,timezone=”GMT-8”)</h5><p><strong>是将String转换成Date，一般前台给后台传值时用</strong></p>
+<h5 id="2-DateTimeFormat-pattern-”yyyy-MM-dd”"><a href="#2-DateTimeFormat-pattern-”yyyy-MM-dd”" class="headerlink" title="2.@DateTimeFormat(pattern=”yyyy-MM-dd”)"></a>2.@DateTimeFormat(pattern=”yyyy-MM-dd”)</h5><p><strong>将Date转换成String 一般后台传值给前台时</strong></p>
+<p><strong>注意</strong></p>
+<p>@JsonFormat不仅可以完成后台到前台参数传递的类型转换，还可以实现前台到后台类型转换。</p>
+<p>当content-type为application/json时，优先使用@JsonFormat的pattern进行类型转换。而不会使用@DateTimeFormat进行类型转换。</p>
+<p>@JsonFormat注解的作用就是完成json字符串到java对象的转换工作，与参数传递的方向无关。</p>
 
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/12/06/activiti总结/" data-id="ck47s1zk100020wr81z80dr4k" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2019/09/30/springmvc回顾/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">springmvc回顾</div>
+    </a>
+  
+</nav>
+
+  
+</article>
 
 </section>
         
